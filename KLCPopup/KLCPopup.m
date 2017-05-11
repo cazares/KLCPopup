@@ -577,7 +577,7 @@ const KLCPopupLayout KLCPopupLayoutCenter = { KLCPopupHorizontalLayoutCenter, KL
       
       // Determine duration. Default to 0 if none provided.
       NSTimeInterval duration;
-      NSNumber* durationNumber = kAnimationDuration;
+      NSNumber* durationNumber = @(kAnimationDuration);
       if (durationNumber != nil) {
         duration = [durationNumber doubleValue];
       } else {
